@@ -93,7 +93,7 @@ IVVVVis invalid<br />
 	  -    Interface
 	  -    Extending Exception class.
 3. Exception:
-	 -     Custom Exception class.
-	 -     Error enum with respective codes.
+	  -    Custom Exception class.
+	  -    Error enum with respective codes.
 4. Unit Test
 5. Custom Response contaning line-error mapping (For better understanding).
