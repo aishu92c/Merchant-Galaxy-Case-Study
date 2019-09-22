@@ -91,9 +91,9 @@ IVVVVis invalid<br />
 1.  Singlton : Used in processing of the resspective statement classes.
 2. Inheritance:
 	  -    Interface
-	  -     Extending Exception class.
+	  -    Extending Exception class.
 3. Exception:
-	 -      Custom Exception class.
-	 -      Error enum with respective codes.
+	 -     Custom Exception class.
+	 -     Error enum with respective codes.
 4. Unit Test
 5. Custom Response contaning line-error mapping (For better understanding).
