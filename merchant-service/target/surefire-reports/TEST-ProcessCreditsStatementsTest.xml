@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="ProcessCreditsStatementsTest" time="0.002" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="ProcessCreditsStatementsTest" time="0.001" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre/lib"/>
@@ -68,7 +68,7 @@
   <testcase classname="ProcessCreditsStatementsTest" name="testInValidComputedCreditsQuestion" time="0"/>
   <testcase classname="ProcessCreditsStatementsTest" name="testValidComputedCreditsQuestion" time="0"/>
   <testcase classname="ProcessCreditsStatementsTest" name="testEvaluateInValidCreditsQuestion" time="0"/>
-  <testcase classname="ProcessCreditsStatementsTest" name="testInValidCreditsLine" time="0.002"/>
+  <testcase classname="ProcessCreditsStatementsTest" name="testInValidCreditsLine" time="0.001"/>
   <testcase classname="ProcessCreditsStatementsTest" name="testEvaluateValidCreditsQuestion" time="0"/>
   <testcase classname="ProcessCreditsStatementsTest" name="testValidCreditsLine" time="0"/>
 </testsuite>
