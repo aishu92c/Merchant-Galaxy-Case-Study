@@ -2,29 +2,27 @@ package assignment.merchantgalaxy.model;
 
 public enum InputLineType {
 
-    /**
-     * This represents that line is of Assignment type. Ex: glob is V
-     */
+    //This represents  type. Ex: glob is V
+
     ROMAN_TYPE_STATEMENT,
 
-    /**
-     * This represents that line is question asking how much. Ex : how much is pish tegj glob glob ?
-     */
+    // This represents type. Ex : how much is pish tegj glob glob ?
+
     ROMAN_TYPE_QUESTION,
 
-    /**
-     * This represents that line is of Credits type. Ex : glob glob Silver is 34 Credits
-     */
+
+     //This represents type. Ex : glob glob Silver is 34 Credits
+
     CREDITS_TYPE_STATEMENT,
 
-    /**
-     * This represents that line is question asking how many. Ex: how many Credits is glob prok Iron ?
-     */
+
+     //This represents type Ex: how many Credits is glob prok Iron ?
+
     CREDITS_TYPE_QUESTION,
 
-    /**
-     * This represents that line does not matched any of the line type mentioned above
-     */
+
+    //This represents that line does not matched any of the line type mentioned above
+
     NOMATCH;
 
     public static String patternRomanTypeStatement = "^([A-Za-z]+) is ([I|V|X|L|C|D|M]+)$";

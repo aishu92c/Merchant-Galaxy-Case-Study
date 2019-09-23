@@ -56,13 +56,17 @@ public class InputReader {
 
 
         }
-        merchantResponse.setErrors(errors);
-        merchantResponse.setOutput(output);
+
+        if (errors.size() == 0 && output.isEmpty()) {
+            errors.put(ParseErrors.NO_INPUT.getDescription(), ParseErrors.NO_INPUT);
+        }
         if (errors.size() != 0) {
             merchantResponse.setStatus(ResponseStatus.CONVERSION_FAILED.getDescription());
         } else {
             merchantResponse.setStatus(ResponseStatus.CONVERSION_SUCCESS.getDescription());
         }
+        merchantResponse.setErrors(errors);
+        merchantResponse.setOutput(output);
         return merchantResponse;
 
     }
