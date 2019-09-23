@@ -94,9 +94,7 @@ public class ProcessCreditsStatements implements LineOperations {
                     errors.put(line,ParseErrors.NO_IDEA);
                     return ParseErrors.NO_IDEA.getDescription();
 
-
-                    //break;
-                }
+                    }
 
             }
             if(errors.size() == 0) {

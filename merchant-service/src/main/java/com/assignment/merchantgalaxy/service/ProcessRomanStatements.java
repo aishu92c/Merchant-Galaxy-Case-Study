@@ -46,14 +46,8 @@ public class ProcessRomanStatements implements LineOperations {
 
     }
 
-    /**
-     * <p>This method process the line for type how_much question<br>
-     * It extracts all the constant identifiers from line and calculates the value from the romanValues hashMap<br>
-     * It will generate an error
-     *
-     * @param line
-     * @throws Exception
-     */
+
+    //evaluates the how much question by extracting the values from hashmap depending on the keys presengt in the question
     public String evaluateLine(String line, HashMap<String, String> romanValues, HashMap<String, ParseErrors> errors, HashMap<String, String> computedValues) throws ConverterException {
 
         {
@@ -73,7 +67,6 @@ public class ProcessRomanStatements implements LineOperations {
                     String romanValue = romanValues.get(key);
                     if (romanValue == null) {
                         // key not present in the hash map
-                        //errors.add(ParseErrors.NO_IDEA);
                         isInvalid = true;
                         break;
                     }

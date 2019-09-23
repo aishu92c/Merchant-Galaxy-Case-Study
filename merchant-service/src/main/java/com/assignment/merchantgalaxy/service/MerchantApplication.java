@@ -12,24 +12,15 @@ public class MerchantApplication {
 
     public static void main(String[] args) {
 
-        //com.galaxy.merchant.Utility.println("Welcome to GalaxyMerchant ! please provide input below and a blank new line to finish input");
 
-        // Initialize a new paragraph
         InputReader inputReader = new InputReader();
 
-        // Read the input from console, validate and process
-        MerchantResponse merchantResponse= null;
+        MerchantResponse merchantResponse = null;
+        //reads input from the console
+        merchantResponse = inputReader.readInput();
+        merchantResponse.getOutput().forEach(val -> System.out.println(val));
 
-            merchantResponse = inputReader.readInput();
-            for(int i=0;i<merchantResponse.getOutput().size();i++)
-            {
-                System.out.println(merchantResponse.getOutput().get(i));
-            }
-            System.out.println(merchantResponse.toString());
-
-
-
-
+        System.out.println(merchantResponse.toString());
 
 
     }

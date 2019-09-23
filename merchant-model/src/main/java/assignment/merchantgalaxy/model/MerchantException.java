@@ -1,13 +1,13 @@
 package assignment.merchantgalaxy.model;
 
-public class ConverterException extends Exception {
+public class MerchantException extends Exception {
 
     private ParseErrors parseErrors;
     private String msg;
     private String line;
     private int code;
 
-    public ConverterException(ParseErrors parseErrors, String msg, String line, int code) {
+    public MerchantException(ParseErrors parseErrors, String msg, String line, int code) {
         this.parseErrors = parseErrors;
         this.msg = msg;
         this.line = line;
@@ -20,7 +20,7 @@ public class ConverterException extends Exception {
 
     @Override
     public String toString() {
-        return "ConverterException{" +
+        return "MerchantException{" +
                 "parseErrors=" + parseErrors +
                 ", msg='" + msg + '\'' +
                 ", line='" + line + '\'' +
